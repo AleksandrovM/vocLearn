@@ -1,13 +1,13 @@
 # vocLearn
 node js module for learning words
 
-Usage.
-node main // for working with file 'input.txt'
-node main file.txt // for working with your custom file
+Usage. <br>
+node main // for working with file 'input.txt' <br>
+node main file.txt // for working with your custom file <br>
 
-For quit enter q.
+For quit enter q. <br>
 
-Word's file format:
-  prudent-предусмотрительный
-  seemingly-по видимому
+Word's file format: <br>
+  prudent-предусмотрительный <br>
+  seemingly-по видимому <br>
   former-бывший
