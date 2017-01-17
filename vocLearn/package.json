@@ -1,0 +1,17 @@
+{
+  "name": "vocm",
+  "version": "1.0.0",
+  "engines": {"node": "6.*"},
+  "description": "My English lessons",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main"
+  },
+  "author": "Matvey",
+  "license": "ISC",
+  "dependencies": {
+    "read": "^1.0.7",
+    "shuffle-array": "*"
+  }
+}
