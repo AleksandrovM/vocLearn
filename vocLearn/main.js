@@ -88,10 +88,16 @@ function *engTest(mas){
         {
             console.log('RIGHT');
             trues++;
-        }else
+        }
+        else if(ans.toLowerCase().substring(0,3) === mas[i].second.toLowerCase().substring(0,3))
+        {
+            console.log('ALMOST');
+            badAnss.push(mas[i])
+        }
+        else
         {
             console.log('no');
-            badAnss.push(mas[i])
+            badAnss.push(mas[i]);
         }
     }
 }
