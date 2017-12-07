@@ -70,12 +70,15 @@ function rrr(itr, aans)
     }
 
     read({ prompt : `${qst.value.first}: ` }, function (err, ans) {
+        if(ans.toLowerCase() !== qst.value.second.toLowerCase())
+        {
             console.log(' U ENTERED ' + ans + `, NEED ${qst.value.second}`);
-            if(ans == 'q')
-            {                  
-                return;
-            }
-            rrr(itr, ans);       
+        }            
+        if(ans == 'q')
+        {                  
+            return;
+        }
+        rrr(itr, ans);       
         });
 };
  
@@ -86,19 +89,18 @@ function *engTest(mas){
        
         if(ans.toLowerCase() === mas[i].second.toLowerCase())
         {
-            console.log('RIGHT');
+            console.log(' RIGHT');
             trues++;
         }
         else if(ans.toLowerCase().substring(0,3) === mas[i].second.toLowerCase().substring(0,3))
         {
-            console.log('ALMOST');
+            console.log(' ALMOST');
             badAnss.push(mas[i])
         }
         else
         {
-            console.log('no');
+            console.log(' no');
             badAnss.push(mas[i]);
         }
     }
 }
- 
