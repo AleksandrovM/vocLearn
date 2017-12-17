@@ -57,7 +57,12 @@ function rrr(itr, aans)
         count = badAnss.length;
         if(count == 0)
         {
+            console.log('Lesson is over');
             return;
+        }
+        else{
+            console.log('Repeat');
+            console.log('');
         }
         
         trues = 0;
